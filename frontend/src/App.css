@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #d8dde7;
+  color: #2171c0;
+}
+
+.dashboard {
+  min-height: 100vh;
+  padding: 32px;
+}
+
+.dashboard-header {
+  margin-bottom: 32px;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.dashboard-header p {
+  margin-top: 8px;
+  color: #000000;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.card {
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #d1d5db;
+}
+
+.metric {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 12px 0;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 12px;
+  background: #374151;
+  border-radius: 999px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 999px;
+  transition: width 0.4s ease, background 0.4s ease;
+}
+
+.progress-fill.normal {
+  background: #22c55e;
+}
+
+.progress-fill.warning {
+  background: #eab308;
+}
+
+.progress-fill.high {
+  background: #ef4444;
+}
+
+.alert-card,
+.chart-card,
+.process-card {
+  margin-top: 24px;
+  background: #1f2937;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.alert-item {
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+.alert-item.warning {
+  background: #854d0e;
+}
+
+.alert-item.high {
+  background: #7f1d1d;
+}
+
+.chart-container {
+  width: 100%;
+  height: 300px;
+}
+
+.process-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.process-table th,
+.process-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #374151;
+}
+
+.process-table th {
+  color: #9ca3af;
+}
+
+.process-table tr:last-child td {
+  border-bottom: none;
+}
+.status-online {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.status-offline {
+  color: #ef4444;
+  font-weight: bold;
+}
