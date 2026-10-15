@@ -25,11 +25,7 @@ function createChartData(history) {
   }))
 }
 
-function getUsageClass(percent) {
-  if (percent >= 80) return "high"
-  if (percent >= 60) return "warning"
-  return "normal"
-}
+
 
 function App() {
   const [systemData, setSystemData] = useState(null)
